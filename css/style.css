@@ -1,0 +1,70 @@
+:root {
+  --primary-color: #5fbaa7;
+}
+
+body{
+margin: 0;
+padding: 0;
+background: rgb(237, 237, 237);
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+
+.container{
+text-align: center;
+margin-top: 10%;
+}
+
+.inputCurrency, .outputCurrency, .swap{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.swap p{
+color: var(--primary-color);
+font-size: 1.1rem;
+}
+
+.swap button{
+background: var(--primary-color);
+color: #fff;
+padding: 5px 10px;
+border-radius: 6px;
+cursor: pointer;
+}
+
+
+img{
+width: 150px;
+}
+
+.heading{
+color: var(--primary-color);
+font-size: 2.2rem;
+}
+
+.explain{
+font-size: 1.2rem;
+}
+
+#firstSel, #secondSel{
+height: 40px;
+font-size: 1.3rem;
+}
+
+#firstInp, #secondInp{
+  font-size: 2rem;
+  text-align: end;
+  border: 0;
+  background: transparent;
+}
+
+/* Removing Ability to Use Arrows on the second Input */
+#secondInp::-webkit-outer-spin-button,
+#secondInp::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
